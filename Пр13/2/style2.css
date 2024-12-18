@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 10px 8% 0 8%;
+  font: 1.3em Arial, sans-serif;
+}
+.content {
+  margin: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+section {
+  background:  #c2b9b9b9;
+  padding: 15px;
+  display: grid;
+  height: 40vh;
+  margin-bottom: 15px;
+  display: block;
+}
+
+p,
+h2 {
+  margin: 10px;
+}
+
+a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section img {
+  width: 30%;
+  border-radius: 10%;
+  box-shadow: 2px 3px 3px #494a4f;
+  margin: 0 2%;
+  float: right;
+}
+
+img:hover {
+  width: 35%;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.paginator button {
+  padding: 5px 10px;
+  margin: 10px 10px 10px 10px;
+  cursor: pointer;
+  outline: 1px solid #494a4f;
+  border-radius: 1px;
+  border: none;
+  width: 30px;
+}
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  
+}
+h1{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
+
+@media print{
+  html,body{
+    height: 297mm;
+    width: 210mm;
+  }
+  @page{
+    margin: 15mm 5mm 5mm 5mm;
+  }
+  .pagination, .action-printer{
+    display: none;
+  }
+}
